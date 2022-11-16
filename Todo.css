@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(./bg-intro-desktop.png);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: aqua;
+    width: 30em;
+    height: auto;
+    text-align: center;
+    border: none;
+    border-radius: 3em;
+    padding: 1em 0;
+    position: relative;
+    top: 50%;
+}
+
+.heading{
+    color: rgb(53, 1, 136);
+    background-color: rgb(58, 106, 194);
+    margin: 0.5em 2em;
+    border: none;
+    padding: .1em 1em;
+    border-radius: 1em;
+}
+
+.input-cont{
+    background-color: blue;
+    margin: 0.5em auto;
+    border: none;
+    border-radius: .5em;
+    padding: .5em;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+
+}
+
+.input-cont input{
+    border: none;
+    border-radius: .3em;
+    font-size: 20px;
+    width: 100%;
+}
+
+.input-cont .btn-submit{
+    margin-left: 2em;
+    background-color: blueviolet;
+    border: none;
+    border-radius: .5em;
+    padding: .5em 1em;
+    color: #fff;
+    letter-spacing: .2em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-submit:hover{
+    background-color: rgb(81, 7, 151);
+}
+
+.after-input{
+    /*background-color: #fff;*/
+    width: 20em;
+    margin: 2em auto;
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em 0;
+}
+
+.after-input li{
+    background-color: rgb(59, 59, 236);
+    padding: .5em 0;
+    padding-left: 1em;
+    border-radius: .5em;
+    list-style-type: none;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.input-task{
+        color: red;
+}
+
+.close{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.close:hover{
+    background-color: hotpink;
+}
+
+
+@media screen and (max-width:400px){
+
+    h1{
+        font-size: 18px;
+    }
+
+    .container{
+        width: 20em;
+    }
+    
+    .input-cont{
+        width: 80%;      
+        font-size: 15px;
+
+    }
+
+    .input-cont input{
+        font-size: 15px;
+    }
+}
